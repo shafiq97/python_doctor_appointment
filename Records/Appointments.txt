@@ -1,0 +1,13 @@
+Doctor Name: doctor 1
+Nurse Name: nurse 1
+Appointment Date: today
+Service: mobile
+Equipment List: ['pisau', 'gunting']
+Patient Name: shafiq
+
+Doctor Name: doctor 1
+Nurse Name: nurse 1
+Appointment Date: today
+Service: mobile
+Equipment List: ['pisau', 'gunting']
+Patient Name: shafiq2

@@ -1,0 +1,35 @@
+Name: shafiq
+Identity Number: 9793928382283
+Age: 25
+Race: Malay
+Height: 100
+Weight: 100
+Occupation: teacher
+Telephone Number: 0111887374
+Home Address: kedah
+State: kedah
+Current Health Conditions: bad
+
+Name: patient 1
+Identity Number: 970838299938
+Age: 12
+Race: Malay
+Height: 12cm
+Weight: 30kg
+Occupation: student
+Telephone Number: 01119983842
+Home Address: Sepang
+State: SElangor
+Current Health Conditions: good
+
+Name: shafiq2
+Identity Number: 9793928382283
+Age: 25
+Race: Malay
+Height: 100
+Weight: 100
+Occupation: teacher
+Telephone Number: 0111887374
+Home Address: kedah
+State: kedah
+Current Health Conditions: bad
