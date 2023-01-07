@@ -1,0 +1,7 @@
+Address: 7
+Race: malay
+Population: 12
+Hospital Name: serdang
+Travel Time: 12pm
+Transportation Type: ambulance
+
