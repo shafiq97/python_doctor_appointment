@@ -1,7 +1,33 @@
 
 from Appointment import Appointment
+from FlyingDoctor import FlyingDoctor
 from Medical_Staff import MedicalStaff
+from MobileClinic import MobileClinic
 from Patient import Patient
+
+
+def input_mobile_clinic_information():
+    address = input("Enter address: ")
+    race = input("Enter race: ")
+    population = int(input("Enter population: "))
+    hospital_name = input("Enter hospital name: ")
+    travel_time = input("Enter travel time: ")
+    transportation_type = input("Enter transportation type: ")
+    mobile_clinic = MobileClinic(
+        address, race, population, hospital_name, travel_time, transportation_type)
+    with open("Records/MobileClinic.txt", "a") as file:
+        file.write(f"Address: {mobile_clinic.address}\nRace: {mobile_clinic.race}\nPopulation: {mobile_clinic.population}\nHospital Name: {mobile_clinic.hospital_name}\nTravel Time: {mobile_clinic.travel_time}\nTransportation Type: {mobile_clinic.transportation_type}\n\n")
+
+
+def input_flying_doctor_information():
+    date = input("Enter date: ")
+    day = input("Enter day: ")
+    area = input("Enter area: ")
+    time = input("Enter time: ")
+    flying_doctor = FlyingDoctor(date, day, area, time)
+    with open("Records/FlyingDoctor.txt", "a") as file:
+        file.write(
+            f"Date: {flying_doctor.date}\nDay: {flying_doctor.day}\nArea: {flying_doctor.area}\nTime: {flying_doctor.time}\n\n")
 
 
 def view_appointments():
@@ -118,7 +144,9 @@ def menu():
     print("3. Enter patient symptoms")
     print("4. Consult Patient")
     print("5. View Appoinments")
-    print("6. Exit")
+    print("6. Add Flying Doctor Information")
+    print("7. Add Mobile Clinic Information")
+    print("8. Exit")
     choice = int(input("Enter your choice: "))
     if choice == 1:
         register_patient()
@@ -132,6 +160,10 @@ def menu():
     elif choice == 5:
         view_appointments()
     elif choice == 6:
+        input_flying_doctor_information()
+    elif choice == 7:
+        input_mobile_clinic_information()
+    elif choice == 8:
         exit()
     else:
         print("Invalid choice. Please try again.")
